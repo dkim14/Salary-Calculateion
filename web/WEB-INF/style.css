@@ -1,0 +1,14 @@
+table {
+	align : center;
+	color : 'white';
+}
+
+body {
+	background-color : 'light blue';
+	padding : 20px;
+}
+h1 {
+	text-align: center;
+	color: 'white';
+	font-size: 20px;
+}
