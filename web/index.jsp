@@ -9,7 +9,7 @@
     <body>
         <h1>Simple Salary Calculator</h1>
         <hr>
-        <form name="CalculatorFrom" action="result.jsp" method="post">
+        <form name="CalculatorFrom" action="results.jsp" method="post">
             <table align="center">
                 <tbody>
                     <tr>
@@ -24,7 +24,7 @@
                     
                     <tr>
                         <td>Pre-tax Deduct:</td>
-                        <td> <input type="email" name="PreTaxDeduct" value="" size="20"></td>
+                        <td> <input type="text" name="PreTaxDeduct" value="" size="20"></td>
                     </tr>
                     
                     <tr>
