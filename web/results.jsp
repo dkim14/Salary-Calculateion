@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type= "text/css" href="style.css">
+        <link rel="stylesheet" type= "text/css" href="results.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Result for Salary Calculator</title>
     </head>
@@ -20,10 +20,12 @@
     
     
     <body>
+         
         <h1>Salary info</h1>
         <hr>
-        <table border="1">
+        <table align="center">
             <tbody>
+           
                 <tr>
                     <td>Total Hours Worked:</td>
                     <td><%=hoursWorked%></td>
@@ -121,8 +123,7 @@
                             out.print((ptPay-(ptPay*0.22))-PostDeduct);
                         %></td>
                 </tr>
-            </tbody>
-        </table>
-
+               </tbody>
+            </table>  
     </body>
 </html>

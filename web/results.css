@@ -1,0 +1,26 @@
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 35px;  
+	}
+
+body {
+	background-color: #4E6EFF;
+	padding : 20px;
+        text-align: center;
+	
+        
+}
+table{
+    width: auto;
+    height: auto;
+    
+}
+
+tbody{
+	background-color: white;
+	text-align: right;
+        width: 30%
+        
+}
+
