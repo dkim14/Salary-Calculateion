@@ -45,7 +45,9 @@
                             out.print(Overtime);
                         }
                         else 
+                        {
                             out.print("0");
+                        }
                     
                         %>
                     </td>
@@ -57,9 +59,9 @@
                         {
                             out.print(otPay);
                         }
-                        else
+                        else{
                             out.print("0");
-                        
+                        }
                         %></td>
                 </tr>
                 <tr>
@@ -72,9 +74,11 @@
                             out.print(grosspay);
                         }
                         else
+                        {
                             grosspay = hoursWorked*hourPay;
                             out.print(grosspay);
-                        %></td>
+                        }
+                    %></td>
                 </tr>
                 <tr>
                     <td>Pre-tax Deduct:</td>
@@ -95,9 +99,11 @@
                         out.print(ptPay*0.18);
                        
                         }
-                        else 
+                        else
+                        {
                             out.print(ptPay*0.22);
-                        %></td>
+                        }   
+                    %></td>
                 </tr>
                 <tr>
                     <td>Post-tax pay:</td>
@@ -107,9 +113,9 @@
                             out.print(ptPay-(ptPay*0.18));
                         }
                         else
-                       
+                        {
                             out.print(ptPay-(ptPay*0.22));
-                    
+                        }
                     %></td>
                 </tr>
                 <tr>
@@ -124,8 +130,10 @@
                             out.print((ptPay-(ptPay*0.18))-PostDeduct);
                         }
                         else
+                        {
                             out.print((ptPay-(ptPay*0.22))-PostDeduct);
-                        %></td>
+                        }    
+                    %></td>
                 </tr>
                </tbody>
             </table>  
