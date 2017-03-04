@@ -14,8 +14,9 @@
         int PostDeduct = Integer.parseInt(request.getParameter("PostTaxDeduct"));
         int Overtime = hoursWorked-40;
         double otPay = hourPay*1.5;
-        double grosspay=(40*hourPay)+(Overtime*otPay);
-        double ptPay=grosspay-PreDeduct;
+        double grosspay;
+        double ptPay;
+        
     %>
     
     
@@ -67,10 +68,12 @@
                       
                         if (hoursWorked>40)
                         {
+                            grosspay=(40*hourPay)+(Overtime*otPay);
                             out.print(grosspay);
                         }
                         else
-                            out.print(hoursWorked*hourPay);
+                            grosspay = hoursWorked*hourPay;
+                            out.print(grosspay);
                         %></td>
                 </tr>
                 <tr>
@@ -80,7 +83,8 @@
                 <tr>
                     <td>Pre-tax Pay:</td>
                     <td><%
-                        out.print(ptPay);
+                        ptPay=grosspay-PreDeduct;
+                        out.print( ptPay );
                       
                     %></td>
                 </tr>
